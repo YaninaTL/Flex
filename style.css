@@ -17,12 +17,13 @@ header {
 ul {
     display: flex;
     list-style-type: none;
+    align-items: center;
 }
 ul li a {
     padding: 0 20px;
     text-decoration: none;
     display: inline-block;
-    color: crimson;
+    color: black;
     }
     li a::after {
         content: '';
@@ -75,4 +76,12 @@ ul li a {
         text-transform: uppercase;
         border-radius: 50px;
     }
-    
+    .signup-btn {
+        padding: 10px 20px;
+        background: lightgray;
+        color: black;
+        outline: none;
+        text-transform: uppercase;
+        border-radius: 50px;
+    }
+    /* Need to alight element better (+ for different layouts) */
