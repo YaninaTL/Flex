@@ -9,7 +9,7 @@ body {
 }
 header {
     height: 100px;
-    background-color: gray;
+    background-color: lightgray;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -21,19 +21,58 @@ ul {
 ul li a {
     padding: 0 20px;
     text-decoration: none;
-    background: rgb(228, 204, 106);
     display: inline-block;
+    color: crimson;
     }
     li a::after {
         content: '';
         display: block;
         height: 4px;
         width: 0;
-        background: blueviolet;
+        background: rgb(245, 245, 27);
         transition: all .5s;
     } 
     li a:hover::after {
         width: 100%;
     }
     /* Now we have some underline animation while hovering links */
+    main {
+        display: flex;
+        height:calc(100vh - 100px);
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-img {
+        max-width: 670px;
+        height: auto;
+    }
+    .content-left {
+        width: 30%;  
+    }
+    main h1 {
+        font-size: 3rem;
+        color: rgb(96, 110, 124);
+        text-transform: uppercase;
+    }
+    main h2 {
+        font-size: 1.5rem;
+        color: crimson;
+        font-weight: 400;
+        text-transform: uppercase ;
+    }
+    main p {
+        font-size: 1rem;
+        font-weight: 400;
+        color: black;
+        line-height: 32px;
+        margin: 30px 0;
+    }
+    .cta {
+        padding: 15px 30px;
+        background: lightgray;
+        color: black;
+        outline: none;
+        text-transform: uppercase;
+        border-radius: 50px;
+    }
     
