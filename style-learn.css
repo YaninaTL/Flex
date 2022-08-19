@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Finger Paint', cursive;
+    cursor: default;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: linear-gradient(rgba(128, 128, 128, 0.9),rgba(248, 211, 0, 0.1));
+}
+.about-left,
+.about-middle,
+.about-right {
+    margin: 20px;
+}
+h2:hover {
+    color: crimson;
+}
+
+
+
+/* }
+.about-left h2 {
+max-width: 100%;
+}
+div.about-middle,
+.about-right {
+    margin-top: 200px;
+} */
+/* .about-left,
+.about-middle,
+.about-right {
+    padding: 1rem;
+    margin: 1rem;
+    display:flex;
+
+} */

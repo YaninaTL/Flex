@@ -91,4 +91,13 @@ ul li a {
         text-transform: uppercase;
         border-radius: 50px;
     }
+
+    button a {
+        text-decoration: none;
+        color: black;
+    }
+    button a::after {
+        text-decoration: none;
+        color: black;
+    }
     /* Need to alight element better (+ for different layouts) */
