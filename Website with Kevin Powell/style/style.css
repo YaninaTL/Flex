@@ -289,4 +289,8 @@ body {
   .mobile-nav-toggle .icon-close {
     display: none;
   }
+}
+.opened {
+  display: block;
+  position: fixed;
 }/*# sourceMappingURL=style.css.map */
