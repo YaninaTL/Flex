@@ -289,7 +289,7 @@ body {
   .primary-navigation {
     display: none;
 
-    position: absolute;
+    position: fixed;
     inset: 7rem var(--size-400) auto;
     // necessary size of the list (bottom-top)
     background: var(--clr-neutral-100);
@@ -335,6 +335,9 @@ body {
   .mobile-nav-toggle {
     // turn on icon for mob
     display: block;
+    position: fixed;
+    top: var(--size-600);
+    right: var(--size-400);
     cursor: pointer;
     background: transparent;
     border: 0;
