@@ -279,6 +279,10 @@ body {
   .primary-navigation {
     display: none;
   }
+  .primary-navigation[data-visible] {
+    display: block;
+    position: fixed;
+  }
   .mobile-nav-toggle {
     display: block;
     cursor: pointer;
@@ -289,8 +293,4 @@ body {
   .mobile-nav-toggle .icon-close {
     display: none;
   }
-}
-.opened {
-  display: block;
-  position: fixed;
 }/*# sourceMappingURL=style.css.map */

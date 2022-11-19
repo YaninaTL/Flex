@@ -284,6 +284,13 @@ body {
   .primary-navigation {
     display: none;
   }
+
+  .primary-navigation[data-visible] {
+    display: block;
+    position: fixed;
+  }
+  // toggle attribute JS
+
   .mobile-nav-toggle {
     // turn on icon for mob
     display: block;
@@ -298,8 +305,8 @@ body {
   }
 }
 
-// toggle JS
-.opened {
-  display: block;
-  position: fixed;
-}
+// toggle class JS
+// .opened {
+//   display: block;
+//   position: fixed;
+// }
