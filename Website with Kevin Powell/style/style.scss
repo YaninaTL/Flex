@@ -181,6 +181,23 @@ body {
   font-size: var(--fs-nav);
 }
 
+.nav-list {
+  display: flex;
+  gap: clamp(var(--size-400), 5vw, var(--size-700));
+  // not to use media
+  font-weight: var(--fw-semi-bold);
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: var(--clr-primary-400);
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+  color: var(--clr-accent-400);
+}
+
 // turn off links for mob
 @media (max-width: 50em) {
   .primary-navigation {
@@ -189,6 +206,11 @@ body {
     position: fixed;
     inset: 7rem var(--size-400) auto;
     // necessary size of the list (bottom-top)
+
+    // max-width: 25rem;
+    // margin-inline: auto;
+    // to hide sizing of the list
+
     background: var(--clr-neutral-100);
     border-radius: var(--size-100);
 
@@ -212,16 +234,6 @@ body {
     gap: var(--size-600);
     text-align: center;
     font-weight: var(--fw-bold);
-  }
-
-  .nav-list a {
-    text-decoration: none;
-    color: var(--clr-primary-400);
-  }
-
-  .nav-list a:hover,
-  .nav-list a:focus {
-    color: var(--clr-accent-400);
   }
 
   .primary-navigation[data-visible] {
