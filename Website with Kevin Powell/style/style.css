@@ -262,7 +262,7 @@ body {
 }
 
 .primary-header {
-  margin-top: var(--size-700);
+  padding-top: var(--size-700);
 }
 
 .nav-wrapper {
@@ -287,6 +287,14 @@ body {
     background: var(--clr-neutral-100);
     border-radius: var(--size-100);
     padding: var(--size-700);
+    box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.05);
+  }
+  .primary-header[data-overlay]::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    z-index: -1;
   }
   .nav-list {
     display: grid;
