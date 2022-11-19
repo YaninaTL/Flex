@@ -279,15 +279,44 @@ body {
 .mobile-nav-toggle {
   display: none;
 }
+
+.nav-list {
+  font-size: var(--fs-nav);
+}
+
 // turn off links for mob
 @media (max-width: 50em) {
   .primary-navigation {
     display: none;
+
+    position: absolute;
+    inset: 7rem var(--size-400) auto;
+    // necessary size of the list (bottom-top)
+    background: var(--clr-neutral-100);
+    border-radius: var(--size-100);
+
+    padding: var(--size-700);
+  }
+
+  .nav-list {
+    display: grid;
+    gap: var(--size-600);
+    text-align: center;
+    font-weight: var(--fw-bold);
+  }
+
+  .nav-list a {
+    text-decoration: none;
+    color: var(--clr-primary-400);
+  }
+
+  .nav-list a:hover,
+  .nav-list a:focus {
+    color: var(--clr-accent-400);
   }
 
   .primary-navigation[data-visible] {
     display: block;
-    position: fixed;
   }
   // toggle attribute JS
 
