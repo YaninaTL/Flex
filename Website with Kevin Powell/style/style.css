@@ -56,8 +56,8 @@
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role=list],
-ol[role=list] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -80,7 +80,7 @@ body {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
@@ -97,22 +97,34 @@ svg {
     scroll-behavior: auto;
   }
   *,
-*::before,
-*::after {
+  *::before,
+  *::after {
     -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
     -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
+
+/* GENERAL */
 body {
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
   color: var(--clr-primary-400);
 }
 
+p:not([class]) {
+  opacity: 0.7;
+  max-width: 32ch;
+}
+
+p[data-width="wide"] {
+  max-width: 42ch;
+}
+
+/* BTN */
 .button {
   display: inline-flex;
   border: 0;
@@ -134,14 +146,14 @@ body {
   opacity: 0.8;
 }
 
-.button[data-type=inverted] {
+.button[data-type="inverted"] {
   background-color: var(--clr-neutral-100);
   color: var(--clr-accent-400);
   box-shadow: 0 1.25em 1em -1em rgba(169, 64, 3, 0.7);
 }
 
-.button[data-type=inverted]:hover,
-.button[data-type=inverted]:focus-visible {
+.button[data-type="inverted"]:hover,
+.button[data-type="inverted"]:focus-visible {
   background-color: var(--clr-neutral-100);
   opacity: 0.9;
 }
@@ -221,6 +233,22 @@ body {
   }
 }
 /* Utility classes */
+.container {
+  --max-width: 1110px;
+  --padding: 1rem;
+  width: min(var(--max-width), 100% - var(--padding) * 2);
+  margin-inline: auto;
+}
+
+:where(.flow :not(:first-child)) {
+  margin-top: var(--flow-spacer, 3em);
+}
+
+.even-columns {
+  display: grid;
+  gap: 1rem;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -327,21 +355,10 @@ body {
     display: inline-flex;
   }
 }
-.container {
-  --max-width: 1110px;
-  --padding: 1rem;
-  width: min(var(--max-width), 100% - var(--padding) * 2);
-  margin-inline: auto;
-}
-
-.even-columns {
-  display: grid;
-  gap: 1rem;
-}
 
 @media (min-width: 50em) {
   .even-columns {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
