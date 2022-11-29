@@ -232,6 +232,22 @@ p[data-width="wide"] {
     display: none;
   }
 }
+
+/* FOOTER NAV */
+
+.footer-nav {
+  columns: 2;
+}
+
+.footer-nav a {
+  color: var(--clr-neutral-100);
+  text-decoration: none;
+}
+
+.footer-nav a:where(:hover, :focus) {
+  color: var(--clr-accent-400);
+}
+
 /* Utility classes */
 .container {
   --max-width: 1110px;
