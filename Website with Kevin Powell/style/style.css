@@ -248,6 +248,30 @@ p[data-width="wide"] {
   color: var(--clr-accent-400);
 }
 
+/* SOCIAL */
+.social-list {
+  display: flex;
+  gap: var(--size-300);
+}
+
+.social-icon {
+  width: var(--size-600);
+  fill: var(--clr-neutral-100);
+
+  aspect-ratio: 1;
+  /* removes default hight */
+}
+
+.social-list a:is(:hover, :focus) .social-icon {
+  fill: var(--clr-accent-400);
+}
+
+@media (min-width: 50em) {
+  .social-icon {
+    width: var(--size-500);
+  }
+}
+
 /* Utility classes */
 .container {
   --max-width: 1110px;
