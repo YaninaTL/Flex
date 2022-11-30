@@ -233,6 +233,13 @@ p[data-width="wide"] {
   }
 }
 
+/* FOOTER */
+
+.primary-footer {
+  --logo-color: var(--clr-neutral-100);
+  /* Add var into svg file at first */
+}
+
 /* FOOTER NAV */
 
 .footer-nav {
