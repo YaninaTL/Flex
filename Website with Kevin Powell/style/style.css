@@ -240,10 +240,55 @@ p[data-width="wide"] {
   /* Add var into svg file at first */
 }
 
+/* Changing the position of elements */
+.primary-footer-wrapper {
+  display: grid;
+  gap: var(--size-700);
+  grid-template-areas:
+    "form"
+    "nav"
+    "logo-social";
+}
+
+.primary-footer-logo-social {
+  grid-area: logo-social;
+
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: var(--size-700);
+}
+
+.primary-footer-nav {
+  grid-area: nav;
+}
+
+.primary-footer-form {
+  grid-area: form;
+}
+
+@media (min-width: 50em) {
+  .primary-footer-wrapper {
+    grid-template-areas: "logo-social nav form";
+  }
+  .primary-footer-logo-social {
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--size-700);
+  }
+}
+
+@media (max-width: 50em) {
+  .primary-footer-wrapper > * {
+    margin-inline: auto;
+  }
+}
+
 /* FOOTER NAV */
 
 .footer-nav {
   columns: 2;
+  gap: max(30vw, 2rem);
 }
 
 .footer-nav a {
@@ -258,7 +303,7 @@ p[data-width="wide"] {
 /* SOCIAL */
 .social-list {
   display: flex;
-  gap: var(--size-300);
+  gap: var(--size-600);
 }
 
 .social-icon {
@@ -276,6 +321,11 @@ p[data-width="wide"] {
 @media (min-width: 50em) {
   .social-icon {
     width: var(--size-500);
+  }
+
+  .social-list {
+    display: flex;
+    gap: var(--size-300);
   }
 }
 
