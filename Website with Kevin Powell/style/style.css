@@ -152,6 +152,10 @@ p[data-width="wide"] {
   box-shadow: 0 1.25em 1em -1em rgba(169, 64, 3, 0.7);
 }
 
+.button[data-shadow="none"] {
+  box-shadow: none;
+}
+
 .button[data-type="inverted"]:hover,
 .button[data-type="inverted"]:focus-visible {
   background-color: var(--clr-neutral-100);
@@ -265,6 +269,20 @@ p[data-width="wide"] {
 
 .primary-footer-form {
   grid-area: form;
+
+  display: grid;
+  align-content: space-between;
+}
+
+.primary-footer form {
+  display: flex;
+  gap: var(--size-200);
+}
+
+input:where([type="text"], [type="email"]) {
+  border-radius: 100vw;
+  border: 0;
+  padding: var(--size-200) var(--size-300);
 }
 
 @media (min-width: 50em) {
@@ -288,7 +306,7 @@ p[data-width="wide"] {
 
 .footer-nav {
   columns: 2;
-  gap: max(30vw, 2rem);
+  gap: clamp(var(--size-600), 10vw, var(--size-900));
 }
 
 .footer-nav a {
