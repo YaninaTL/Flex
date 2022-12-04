@@ -247,7 +247,7 @@ p[data-width="wide"] {
   counter-increment: count;
 }
 
-.numbered-items li::before {
+.numbered-items div::before {
   content: "0" counter(count);
   background-color: var(--clr-accent-400);
   color: var(--clr-neutral-100);
@@ -255,6 +255,19 @@ p[data-width="wide"] {
   padding: var(--size-200) var(--size-500);
   border-radius: 100vw;
 }
+/* set up the number */
+
+.numbered-items div {
+  display: grid;
+  grid-template-columns: min-content 1fr 1fr;
+  column-gap: var(--size-400);
+  align-items: center;
+}
+
+.numbered-items div p {
+  grid-column: 1 / -1;
+}
+/* set up the style */
 
 /* FOOTER */
 
