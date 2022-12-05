@@ -241,6 +241,8 @@ p[data-width="wide"] {
 .numbered-items {
   counter-reset: count;
   /* count is just a name */
+  width: fit-content;
+  margin-inline: auto;
 }
 
 .numbered-items li {
@@ -444,6 +446,23 @@ input:where([type="text"], [type="email"]) {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-center p {
+  margin-inline: auto;
+}
+
+@media (max-width: 50em) {
+  .text-center-sm-only {
+    text-align: center;
+  }
+  .text-center-sm-only p {
+    margin-inline: auto;
+  }
 }
 
 .text-primary-400 {
