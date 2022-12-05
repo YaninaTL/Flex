@@ -550,6 +550,10 @@ input:where([type="text"], [type="email"]) {
   padding-block: var(--size-700);
 }
 
+.margin-bottom-700 {
+  margin-block-end: var(--size-700);
+}
+
 .display-sm-none {
   display: none;
 }
