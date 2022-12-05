@@ -255,23 +255,30 @@ p[data-width="wide"] {
   color: var(--clr-neutral-100);
   font-weight: var(--fw-bold);
   padding: 0 var(--size-500);
-  height: 40px;
+
   border-radius: 100vw;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
 }
 
+.numbered-items div::before,
 .numbered-items div::after {
-  content: "";
-  display: block;
-  grid-column: 1 / -1;
-  grid-row: 1 / 2;
-  z-index: -1;
-  background-color: var(--clr-accent-100);
   height: 40px;
-  width: 100%;
-  border-radius: 100vw;
-  inset: 0 -100vw 0 0;
+}
+
+@media (max-width: 30em) {
+  .numbered-items div::after {
+    content: "";
+    display: block;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    z-index: -1;
+    background-color: var(--clr-accent-100);
+    border-radius: 100vw 0 0 100vw;
+
+    box-shadow: 5em 0 0 var(--clr-accent-100);
+    /* won't cause overflow */
+  }
 }
 /* set up the number */
 
@@ -413,8 +420,8 @@ input:where([type="text"], [type="email"]) {
 /* Utility classes */
 .container {
   --max-width: 1110px;
-  --padding: 1rem;
-  width: min(var(--max-width), 100% - var(--padding) * 2);
+  --container-padding: 1rem;
+  width: min(var(--max-width), 100% - var(--container-padding) * 2);
   margin-inline: auto;
 }
 
