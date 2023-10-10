@@ -1,0 +1,25 @@
+:root {
+  --clr-accent: #bb945f;
+  --clr-accent-neutral: #8e8e8e;
+  --clr-accent-dark: #0c0c0e;
+  --clr-primary-neutral: #ffffff;
+  --clr-primary-dark: #000000;
+  --ff-primary: "Inter", sans-serif;
+  --ff-head: "Forum", serif;
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-head);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */
