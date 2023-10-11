@@ -25,3 +25,20 @@ html {
 body {
   margin: 0 auto;
 }
+
+/*hamburger menu icon */
+.hamburger-menu {
+  cursor: pointer;
+  display: none;
+}
+
+nav ul.active {
+  display: block;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 6px 0;
+}

@@ -4,9 +4,92 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Library</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header></header>
+    <header id="home">
+      <nav id="nav">
+        <div class="nav-center">
+          <div class="nav-header">
+            <h1 class="logo">
+              <a href="https://brooklynpubliclibrary.com"
+                >Brooklyn Public Library</a
+              >
+            </h1>
+            <button class="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <!-- links -->
+          <div class="links-container">
+            <ul class="links">
+              <li><a href="#about" class="scroll-link">About</a></li>
+              <li><a href="#favorites" class="scroll-link">Favorites</a></li>
+              <li><a href="#coffee" class="scroll-link">Coffee shop</a></li>
+              <li><a href="#contacts" class="scroll-link">Contacts</a></li>
+              <li><a href="#card" class="scroll-link">Library Card</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="icon">
+        <a class="profile-link" href="#">
+          <img src="./img/icon_profile.svg" alt="icon_profile" />
+        </a>
+      </div>
+
+      <!-- main banner welcome -->
+      <div class="banner">
+        <div class="container"><h2>Welcome to the Brooklyn Library</h2></div>
+      </div>
+    </header>
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="title">
+        <h2>About</h2>
+      </div>
+    </section>
+    <!-- Favorites -->
+    <section id="favorites" class="section">
+      <div class="title">
+        <h2>Favorites</h2>
+      </div>
+    </section>
+    <!-- Coffee shop -->
+    <section id="coffee" class="section">
+      <div class="title">
+        <h2>Coffee shop</h2>
+      </div>
+    </section>
+    <!-- Our Contacts -->
+    <section id="contacts" class="section">
+      <div class="title">
+        <h2>Our Contacts</h2>
+      </div>
+    </section>
+    <!-- Digital Library Cards -->
+    <section id="cards" class="section">
+      <div class="title">
+        <h2>Digital Library Cards</h2>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="section">
+      <div class="part1"></div>
+      <div class="part2">
+        <span id="date">2023</span>
+      </div>
+    </footer>
+    <!-- back to top btn -->
+    <a href="#home" class="scroll-link top-link">
+      <i class="fas fa-arrow-up"> </i>
+    </a>
+    <!-- javascript -->
+    <script src="app.js"></script>
   </body>
 </html>
