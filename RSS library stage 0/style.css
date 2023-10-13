@@ -23,12 +23,9 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  margin: 0 auto;
-}
-
 nav {
   background: var(--clr-accent-dark);
+  padding: 1em;
 }
 
 /* fixed nav */
@@ -42,6 +39,8 @@ nav {
 
 .fixed-nav .links a {
   color: var(--clr-primary-neutral);
+  text-decoration: none;
+  text-align: center;
 }
 
 .fixed-nav .links a:hover {
@@ -56,6 +55,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 1rem;
 }
 
 .nav-toggle {
@@ -76,15 +76,35 @@ nav {
 }
 
 .show-links {
-  height: 200px;
+  height: 300px;
 }
 
 .links a {
   background: var(--clr-accent-dark);
   color: var(--clr-primary-neutral);
-  font-size: 1.1rem;
+  font-family: var(--ff-body);
+  font-size: 1rem;
+  font-weight: 300;
   text-transform: capitalize;
+  text-decoration: none;
+  line-height: 4em;
+  text-align: center;
+  list-style: none;
   display: block;
+}
+
+a.profile-link > img {
+  width: 2em;
+  height: 2em;
+}
+
+h1 a {
+  color: var(--clr-primary-neutral);
+  text-decoration: none;
+  font-family: var(--ff-head);
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 0.06em;
 }
 
 .links a:hover {
@@ -92,9 +112,6 @@ nav {
 }
 
 @media screen and (min-width: 800px) {
-  nav {
-    background: transparent;
-  }
   .nav-center {
     width: 90vw;
     max-width: 1170px;
@@ -102,6 +119,14 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+  h1 a {
+    color: var(--clr-primary-neutral);
+    text-decoration: none;
+    font-family: var(--ff-head);
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.06em;
   }
   .nav-header {
     padding: 0;
@@ -113,19 +138,27 @@ nav {
     height: auto !important;
   }
   .links {
+    list-style: none;
     display: flex;
+    gap: 1.5em;
+    align-items: center;
   }
   .links a {
-    background: transparent;
     color: var(--clr-primary-neutral);
-    font-size: 1.1rem;
+    font-family: var(--ff-body);
+    font-size: 1rem;
+    font-weight: 300;
     text-transform: capitalize;
+    text-decoration: none;
     display: block;
-    margin: 0 1rem;
-    font-weight: bold;
-    padding: 0;
+    background: transparent;
   }
   .links a:hover {
     color: var(--clr-accent);
+  }
+  a.profile-link {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
   }
 }/*# sourceMappingURL=style.css.map */
