@@ -31,3 +31,30 @@ button {
 .btn-one {
   --button-clr: #333;
 }
+/* animation */
+.btn-one .line {
+    transition: 1s;
+    transform-origin: center;
+    /* that important for the crossing in the center! */
+}
+.btn-one:hover :is(.top, .bottom) {
+    y: 45;
+    /* as the middle one */
+}
+
+.btn-one:hover .top {
+    rotate: 45deg;
+}
+
+.btn-one:hover .bottom {
+    rotate: -45deg;
+}
+
+.btn-one:hover .middle {
+    opacity: 0;
+    /* to hide a bar */
+}
+
+.btn-one[aria-expanded='true'] .top {
+    x
+}
