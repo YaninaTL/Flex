@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background: hsl(48, 18%, 83%);
+}
+
+.examples {
+  padding: 3em;
+  max-width: 1200px;
+  display: flex;
+  gap: clamp(2em, 8vw, 4em);
+}
+
+/* set up for the examples */
