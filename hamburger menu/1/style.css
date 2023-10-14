@@ -33,9 +33,21 @@ button {
 }
 /* animation */
 .btn-one .line {
-    transition: 1s;
+    /* transition: 1s; -> for a simple one */
+    transition: y 300ms ease-in 300ms,
+    rotate 300ms ease-in,
+    opacity 0ms 300ms;
+    /* rotate the last value */
+
     transform-origin: center;
     /* that important for the crossing in the center! */
+}
+.btn-one:hover .line {
+
+    transition: y 300ms ease-in,
+    rotate 300ms ease-in 300ms,
+    opacity 0ms 300ms;
+
 }
 .btn-one:hover :is(.top, .bottom) {
     y: 45;
