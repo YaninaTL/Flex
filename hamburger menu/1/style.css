@@ -19,3 +19,15 @@ body {
 }
 
 /* set up for the examples */
+
+button {
+  background: transparent;
+  border: 10px solid var(--button-clr);
+  /* fill ONLY a border -> use fill in svg html */
+  /* for the little one -> thinner */
+  border-radius: 1em;
+}
+/* btn one */
+.btn-one {
+  --button-clr: #333;
+}
