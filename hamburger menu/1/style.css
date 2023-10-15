@@ -33,40 +33,30 @@ button {
 }
 /* animation */
 .btn-one .line {
-    /* transition: 1s; -> for a simple one */
-    transition: y 300ms ease-in 300ms,
-    rotate 300ms ease-in,
-    opacity 0ms 300ms;
-    /* rotate the last value */
+  /* transition: 1s; -> for a simple one */
+  transition: y 300ms ease-in 300ms, rotate 300ms ease-in, opacity 0ms 300ms;
+  /* rotate the last value */
 
-    transform-origin: center;
-    /* that important for the crossing in the center! */
+  transform-origin: center;
+  /* that important for the crossing in the center! */
 }
 .btn-one:hover .line {
-
-    transition: y 300ms ease-in,
-    rotate 300ms ease-in 300ms,
-    opacity 0ms 300ms;
-
+  transition: y 300ms ease-in, rotate 300ms ease-in 300ms, opacity 0ms 300ms;
 }
 .btn-one:hover :is(.top, .bottom) {
-    y: 45;
-    /* as the middle one */
+  y: 45;
+  /* as the middle one */
 }
 
 .btn-one:hover .top {
-    rotate: 45deg;
+  rotate: 45deg;
 }
 
 .btn-one:hover .bottom {
-    rotate: -45deg;
+  rotate: -45deg;
 }
 
 .btn-one:hover .middle {
-    opacity: 0;
-    /* to hide a bar */
-}
-
-.btn-one[aria-expanded='true'] .top {
-    x
+  opacity: 0;
+  /* to hide a bar */
 }
