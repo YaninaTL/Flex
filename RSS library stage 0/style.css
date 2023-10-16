@@ -94,8 +94,8 @@ nav {
 }
 
 a.profile-link > img {
-  width: 2em;
-  height: 2em;
+  width: 1.7em;
+  height: 1.7em;
 }
 
 h1 a {
@@ -191,8 +191,89 @@ header {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .container h2 {
     font-size: 2rem;
   }
+  .action {
+    position: fixed;
+    top: 20px;
+    right: 55px;
+  }
+  .profile-link > img {
+    display: flex;
+  }
+}
+.action .profile {
+  position: relative;
+  width: 2em;
+  height: 2em;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.action .menu {
+  position: absolute;
+  top: 80px;
+  right: -10px;
+  padding: 10px 20px;
+  background: white;
+  width: 200px;
+  box-sizing: 0 5px 25px rgba(0, 0, 0, 0.11);
+  border-radius: 15px;
+  transition: 0.5s;
+  /* for js */
+  visibility: hidden;
+  opacity: 0;
+}
+
+.action .menu h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px 0;
+  font-weight: 500;
+  color: gray;
+  line-height: 1.2em;
+}
+
+.action .menu h3 span {
+  font-size: 14px;
+  color: lightblue;
+  font-weight: 400;
+}
+
+.action .menu ul li {
+  list-style: none;
+  padding: 10px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.action .menu ul li img {
+  max-width: 20px;
+  margin-right: 10px;
+  opacity: 0.5;
+  /* change color to gray */
+  transition: 0.5s;
+}
+
+.action .menu ul li:hover img {
+  opacity: 1;
+}
+
+.action .menu ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: gray;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.action .menu ul li:hover {
+  color: coral;
 }/*# sourceMappingURL=style.css.map */
