@@ -290,13 +290,9 @@ header {
     opacity: 0;
     z-index: 111;
   }
-  .banner {
-    z-index: -2;
-  }
   .action .menu ul li a {
     background: transparent;
     color: var(--clr-primary-dark);
     cursor: pointer;
-    z-index: 580;
   }
 }/*# sourceMappingURL=style.css.map */
