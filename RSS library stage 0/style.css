@@ -96,6 +96,9 @@ nav {
 a.profile-link > img {
   width: 1.7em;
   height: 1.7em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 a {
@@ -196,7 +199,7 @@ header {
     font-size: 2rem;
   }
   .action {
-    position: fixed;
+    position: absolute;
     top: 20px;
     right: 55px;
   }
@@ -206,12 +209,13 @@ header {
 }
 .action .profile {
   position: relative;
-  width: 2em;
-  height: 2em;
+  width: 2.1em;
+  height: 2.1em;
   overflow: hidden;
   cursor: pointer;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .action .menu {
@@ -285,5 +289,14 @@ header {
     visibility: hidden;
     opacity: 0;
     z-index: 111;
+  }
+  .banner {
+    z-index: -2;
+  }
+  .action .menu ul li a {
+    background: transparent;
+    color: var(--clr-primary-dark);
+    cursor: pointer;
+    z-index: 580;
   }
 }/*# sourceMappingURL=style.css.map */
