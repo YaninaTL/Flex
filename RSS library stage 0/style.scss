@@ -25,16 +25,6 @@ html {
 }
 //= 10px
 
-body {
-  // margin-top: 1em;
-  // margin-bottom: 1em;
-
-  // margin-right: 2em;
-  // margin-left: 2em;
-
-  // put everything except footer and nav in main
-}
-
 nav {
   background: var(--clr-accent-dark);
   padding: 1em;
@@ -341,3 +331,8 @@ header {
     // z-index: 580;
   }
 }
+
+main {
+  padding: 0 1em;
+}
+// check it

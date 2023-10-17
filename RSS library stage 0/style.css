@@ -295,4 +295,7 @@ header {
     color: var(--clr-primary-dark);
     cursor: pointer;
   }
+}
+main {
+  padding: 0 1em;
 }/*# sourceMappingURL=style.css.map */
