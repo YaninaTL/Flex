@@ -21,4 +21,104 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+}
+
+body {
+  background: var(--clr-primary-neutral);
+  font-family: var(--ff-body);
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--clr-primary-neutral);
+}
+.center h1 {
+  font-family: var(--ff-head);
+  color: var(--clr-primary-dark);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2rem; /* 100% */
+  letter-spacing: 0.04rem;
+  text-transform: uppercase;
+  margin-bottom: 2em;
+  width: 400px;
+}
+
+.center form {
+  padding: 0 4em;
+}
+
+form .txt-field {
+  position: relative;
+  margin: 3em 0;
+}
+form .txt-field input {
+  width: 100%;
+  border: 1px solid var(--clr-accent);
+  padding: 0 0.5em;
+  height: 2em;
+  width: 20em;
+  font-size: 1.6em;
+}
+form .txt-field label {
+  position: absolute;
+  top: -1em;
+  left: 0;
+  transform: translateY(-50%);
+  text-align: center;
+  font-family: var(--ff-body);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2rem; /* 133.333% */
+  letter-spacing: 0.03rem;
+  pointer-events: none;
+}
+
+input[type=submit] {
+  width: 7.5em;
+  height: 3em;
+  border: 1px solid;
+  background: var(--clr-primary-neutral);
+  color: var(--clr-primary-dark);
+  text-align: center;
+  font-family: var(--ff-body);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.1rem;
+  margin-top: -1em;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background: var(--clr-accent);
+  transition: 0.5s;
+}
+
+.signup-link {
+  margin: 1em 0;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 1em;
+  color: var(--clr-primary-dark);
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+  font-family: var(--ff-body);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: normal;
+}
+.signup-link a {
+  color: var(--clr-accent-dark);
+  text-align: center;
+  font-family: var(--ff-body);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.1rem;
+  text-decoration-line: underline;
 }/*# sourceMappingURL=rstyle.css.map */
