@@ -17,20 +17,20 @@
       <h1>Registration</h1>
       <form action="" method="post">
         <div class="txt-field">
-          <input type="text" required />
-          <label for="">First name</label>
+          <input type="text" name="first-name" required />
+          <label for="first-name">First name</label>
         </div>
         <div class="txt-field">
-          <input type="text" required />
-          <label for="">Last name</label>
+          <input type="text" name="last-name" required />
+          <label for="last-name">Last name</label>
         </div>
         <div class="txt-field">
-          <input type="text" required />
-          <label for="">E-mail</label>
+          <input type="email" name="email" required />
+          <label for="email">E-mail</label>
         </div>
         <div class="txt-field">
-          <input type="password" required />
-          <label for="">Password</label>
+          <input type="password" name="password" required />
+          <label for="password">Password</label>
         </div>
         <input type="submit" value="Sign Up" />
         <div class="signup-link">
@@ -38,5 +38,46 @@
         </div>
       </form>
     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector("form");
+        const firstNameInput = form.querySelector('input[name="first-name"]');
+        const lastNameInput = form.querySelector('input[name="last-name"]');
+        const emailInput = form.querySelector('input[name="email"]');
+        const passwordInput = form.querySelector('input[name="password"]');
+
+        form.addEventListener("submit", function (e) {
+          let valid = true;
+
+          if (!/^[A-Z][a-zA-Z]*$/.test(firstNameInput.value)) {
+            valid = false;
+            alert(
+              "First name must start with a capital letter and contain only letters."
+            );
+          }
+
+          if (!/^[A-Z][a-zA-Z]*$/.test(lastNameInput.value)) {
+            valid = false;
+            alert(
+              "Last name must start with a capital letter and contain only letters."
+            );
+          }
+
+          if (!/^\S+@\S+\.\S+$/.test(emailInput.value)) {
+            valid = false;
+            alert("Email must be in a valid format.");
+          }
+
+          if (passwordInput.value.length < 6) {
+            valid = false;
+            alert("Password must be at least 6 characters long.");
+          }
+
+          if (!valid) {
+            e.preventDefault(); // Prevent form submission if validation fails.
+          }
+        });
+      });
+    </script>
   </body>
 </html>
