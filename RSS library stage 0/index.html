@@ -39,7 +39,7 @@
               <li><a href="#coffee" class="scroll-link">Coffee shop</a></li>
               <li><a href="#contacts" class="scroll-link">Contacts</a></li>
               <li><a href="#card" class="scroll-link">Library Card</a></li>
-
+              <!-- dropdown menu -->
               <div class="icon action">
                 <div class="profile" id="profile-button">
                   <a class="profile-link" href="#">
@@ -50,14 +50,15 @@
                   <h3>Profile</h3>
                   <ul>
                     <li>
-                      <a href="./login/login.html" target="_blank">Log In</a>
+                      <a id="first" target="_blank">My Profile</a>
                     </li>
                     <li>
-                      <a href="./reg/reg.html" target="_blank">Register</a>
+                      <a id="second" target="_blank">Log Out</a>
                     </li>
                   </ul>
                 </div>
               </div>
+              <!-- end of the dropmenu -->
             </ul>
           </div>
         </div>
@@ -70,6 +71,14 @@
             Welcome <br />
             to the Brooklyn Library
           </h2>
+        </div>
+        <div id="profile-popup-container">
+          <!-- Include profile popup in other HTML files -->
+          <iframe
+            src="./profile/profile.html"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
         </div>
       </div>
     </header>
