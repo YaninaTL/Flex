@@ -50,3 +50,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // ... rest of your existing code ...
 });
+
+//close popup
+// // Get the close-popup button
+// const closePopupButton = document.getElementById("close-popup");
+
+// // Get the profile-popup element
+// const profilePopup = document.getElementById("profile-popup");
+
+// // Add a click event listener to the close-popup button
+// closePopupButton.addEventListener("click", function () {
+//   // Hide the profile popup by setting its style to "display: none"
+//   profilePopup.style.display = "none";
+// });
+
+// try with iframe
+
+const closePopupButton = document.getElementById("close-popup");
+closePopupButton.addEventListener("click", function () {
+  // Send a message to the parent window to request the closure of the iframe
+  parent.postMessage({ closePopup: true }, "*");
+});

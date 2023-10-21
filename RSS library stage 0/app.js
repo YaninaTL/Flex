@@ -172,3 +172,13 @@ document.addEventListener("DOMContentLoaded", function () {
     event.stopPropagation(); // Prevent the click event from closing the menu
   });
 });
+
+//iframe
+
+window.addEventListener("message", function (event) {
+  if (event.data.closePopup) {
+    // Hide the iframe containing the popup profile
+    const profilePopupIframe = document.getElementById("profile-popup-iframe");
+    profilePopupIframe.style.display = "none";
+  }
+});
