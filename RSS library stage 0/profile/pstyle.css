@@ -29,4 +29,96 @@ html {
   height: 100%;
   background-color: #0c0c0e;
   margin-top: 3em;
+  display: grid;
+  position: relative;
+}
+
+.left-col {
+  background-color: var(--clr-accent-dark);
+  padding-top: 2em;
+}
+
+.right-col {
+  background-color: var(--clr-primary-neutral);
+  grid-column-start: 2;
+  padding: 2em;
+}
+
+#close-popup {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  background-color: transparent;
+  border: transparent;
+}
+#close-popup svg {
+  width: 1em;
+  height: 1em;
+}
+
+h1 {
+  color: var(--clr-primary-dark);
+  text-align: left;
+  font-family: var(--ff-head);
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem; /* 50% */
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+  padding-bottom: 1em;
+}
+
+.stats {
+  display: flex;
+  gap: 2em;
+  justify-content: flex-start;
+}
+
+.first-card,
+.second-card,
+.third-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.first-card h3,
+.second-card h3,
+.third-card h3 {
+  color: var(--clr-primary-dark);
+  text-align: center;
+  font-family: var(--ff-body);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2rem; /* 100% */
+  letter-spacing: 0.04rem;
+  text-transform: capitalize;
+}
+.first-card img,
+.second-card img,
+.third-card img {
+  margin: 0.5em;
+}
+.first-card .number,
+.second-card .number,
+.third-card .number {
+  color: var(--clr-primary-dark);
+  text-align: center;
+  font-family: var(--ff-body);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2rem; /* 200% */
+  letter-spacing: 0.02rem;
+  text-transform: capitalize;
+}
+
+.books h2 {
+  color: var(--clr-accent-dark);
+  text-align: left;
+  font-family: var(--ff-body);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem; /* 80% */
 }/*# sourceMappingURL=pstyle.css.map */
