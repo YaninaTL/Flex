@@ -90,7 +90,7 @@ h1 {
   text-align: center;
   font-family: var(--ff-body);
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 2rem; /* 100% */
   letter-spacing: 0.04rem;
   text-transform: capitalize;
@@ -121,4 +121,47 @@ h1 {
   font-style: normal;
   font-weight: 400;
   line-height: 2rem; /* 80% */
+  margin-bottom: 1em;
+}
+.books ul li a {
+  color: var(--clr-primary-dark);
+  font-family: var(--ff-body);
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2rem; /* 100% */
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.books ul {
+  margin-bottom: 2em;
+  margin-left: 2em;
+}
+
+.card-number {
+  display: flex;
+  gap: 0.2em;
+  justify-content: flex-start;
+}
+.card-number h3 {
+  color: var(--clr-accent-dark);
+  text-align: left;
+  font-family: var(--ff-body);
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2rem; /* 100% */
+  letter-spacing: 0.04rem;
+}
+.card-number input {
+  border: transparent;
+  color: var(--clr-accent);
+  text-align: center;
+  font-family: var(--ff-body);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2rem; /* 100% */
+  max-width: 100px;
+}
+.card-number #copy-button {
+  border: transparent;
 }/*# sourceMappingURL=pstyle.css.map */
