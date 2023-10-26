@@ -182,3 +182,43 @@ window.addEventListener("message", function (event) {
     profilePopupIframe.style.display = "none";
   }
 });
+
+//slideshow
+let slideIndex = 1; // Initialize the slide index
+
+// Display the initial slide
+showSlides(slideIndex);
+
+// Function to navigate to the next or previous slide
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+// Function to navigate to a specific slide
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+// Function to display the slide with the given index
+function showSlides(n) {
+  const slides = document.getElementsByClassName("mySlides"); // Get all slide elements
+  const dots = document.getElementsByClassName("dot"); // Get all navigation dots
+
+  // Ensure the slide index is within valid bounds
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+
+  // Hide all slides and remove the "active" class from navigation dots
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  // Display the current slide and mark the corresponding dot as "active"
+  slides[slideIndex - 1].style.display = "flex";
+  dots[slideIndex - 1].className += " active";
+}

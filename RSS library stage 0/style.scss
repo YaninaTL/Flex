@@ -383,14 +383,18 @@ iframe.active {
 //slideshow
 
 .slideshow-container {
-  max-width: 1440px;
+  max-width: 800px;
   position: relative;
   margin: auto;
 }
 
 /* Hide the images by default */
 .mySlides {
-  // display: none;
+  display: none;
+
+  display: flex; /* Use flexbox to center vertically */
+  justify-content: center; /* Center horizontally */
+  align-items: center;
 }
 
 /* Next & previous buttons */
@@ -453,3 +457,4 @@ iframe.active {
     opacity: 1;
   }
 }
+// wrap in media!
