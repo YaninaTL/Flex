@@ -415,4 +415,28 @@ iframe.active {
   to {
     opacity: 1;
   }
+}
+@media (min-width: 800px) {
+  .slideshow-container {
+    display: none;
+  }
+  .dots {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .pagination-container {
+    display: none;
+  }
+  .pagination {
+    display: none;
+  }
+}
+#about p {
+  color: var(--clr-primary-dark);
+  text-align: center;
+  font-family: var(--ff-body);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 4rem; /* 200% */
 }/*# sourceMappingURL=style.css.map */

@@ -183,7 +183,7 @@ window.addEventListener("message", function (event) {
   }
 });
 
-//slideshow
+//SLIDESHOW
 let slideIndex = 1; // Initialize the slide index
 
 // Display the initial slide
@@ -222,3 +222,5 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "flex";
   dots[slideIndex - 1].className += " active";
 }
+
+// PAGINATION
