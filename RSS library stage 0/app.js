@@ -224,3 +224,32 @@ function showSlides(n) {
 }
 
 // PAGINATION
+const itemsPerPage = 3;
+const gallery = document.querySelector(".gallery");
+const paginationItems = document.querySelectorAll(".pagination li");
+
+function showPage(page) {
+  const images = gallery.querySelectorAll(`.page-${page}`);
+  images.forEach((image) => {
+    image.style.display = "block";
+  });
+
+  const allImages = gallery.querySelectorAll("img");
+  allImages.forEach((image) => {
+    if (!image.classList.contains(`page-${page}`)) {
+      image.style.display = "none";
+    }
+  });
+
+  paginationItems.forEach((item) => {
+    item.classList.remove("active");
+  });
+  paginationItems[page - 1].classList.add("active");
+}
+
+function changePage(page) {
+  showPage(page);
+}
+
+// Initially show the first page
+showPage(1);

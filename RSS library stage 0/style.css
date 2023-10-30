@@ -423,6 +423,39 @@ iframe.active {
   .dots {
     display: none;
   }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    display: none;
+  }
+  .pagination {
+    display: flex;
+    list-style: none;
+  }
+  .pagination li {
+    margin: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+  }
+  .slider {
+    overflow: hidden;
+    position: relative;
+  }
+  .img-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 300%;
+    height: 100%;
+  }
 }
 @media (max-width: 800px) {
   .pagination-container {
