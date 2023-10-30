@@ -424,13 +424,14 @@ iframe.active {
     display: none;
   }
   .gallery {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+    max-width: 100%;
   }
   .gallery img {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
+    max-width: 100%;
+    height: auto;
     display: none;
   }
   .pagination {
