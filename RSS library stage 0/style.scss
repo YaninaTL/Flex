@@ -150,7 +150,7 @@ h1 a {
   .links a {
     color: var(--clr-primary-neutral);
     font-family: var(--ff-body);
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 300;
     text-transform: capitalize;
     text-decoration: none;
@@ -367,6 +367,8 @@ iframe.active {
 
     text-align: center;
     position: relative;
+
+    margin-top: 0.5em;
   }
   h2::before {
     position: absolute;
@@ -380,6 +382,16 @@ iframe.active {
   }
 }
 
+#about {
+  p {
+    color: var(--clr-primary-dark);
+    text-align: center;
+    font-family: var(--ff-body);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 4rem; /* 200% */
+  }
+}
 //slideshow
 
 .slideshow-container {
@@ -470,61 +482,43 @@ iframe.active {
   }
 
   .gallery {
-    // display: flex;
-    // flex-wrap: nowrap;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 1em;
     max-width: 100%;
-  }
 
-  .gallery img {
-    max-width: 100%;
-    height: auto;
-    display: none;
+    img {
+      max-width: 100%;
+      height: auto;
+      display: none;
+    }
   }
 
   .pagination {
     display: flex;
+    align-items: center;
+    justify-content: center;
     list-style: none;
-  }
+    margin-top: 2em;
+    //repeat dots styles to avoid js conflict
+    li {
+      cursor: pointer;
+      height: 1.2em;
+      width: 1.2em;
+      margin: 0 2px;
+      background-color: var(--clr-primary-dark);
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
 
-  .pagination li {
-    margin: 5px;
-    cursor: pointer;
-    padding: 5px 10px;
-    background-color: #007bff;
-    color: #fff;
-  }
+    li:hover {
+      background-color: var(--clr-accent);
+    }
 
-  // .pagination {
-  //   text-align: center;
-  //   display: block;
-  // }
-
-  // .mySlide {
-  //   display: none;
-  // }
-
-  // .mySlide img {
-  //   display: block;
-  //   margin: 0 auto;
-  // }
-
-  .slider {
-    overflow: hidden;
-    // ?
-    position: relative;
-  }
-
-  .img-container {
-    position: absolute;
-    // change
-    top: 0;
-    left: 0;
-    display: flex;
-    width: 300%;
-    height: 100%;
+    .active {
+      background-color: var(--clr-accent);
+    }
   }
 }
 
@@ -535,16 +529,5 @@ iframe.active {
 
   .pagination {
     display: none;
-  }
-}
-
-#about {
-  p {
-    color: var(--clr-primary-dark);
-    text-align: center;
-    font-family: var(--ff-body);
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 4rem; /* 200% */
   }
 }
