@@ -475,4 +475,7 @@ iframe.active {
   .pagination {
     display: none;
   }
+  .gallery img {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

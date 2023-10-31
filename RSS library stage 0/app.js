@@ -252,4 +252,18 @@ function changePage(page) {
 }
 
 // Initially show the first page
-showPage(1);
+// showPage(1);
+
+//800px+
+function applyPagination() {
+  if (window.innerWidth > 800) {
+    showPage(1);
+  } else {
+    gallery.style.display = "none";
+  }
+}
+
+applyPagination();
+
+// Listen for window resize events
+window.addEventListener("resize", applyPagination);
