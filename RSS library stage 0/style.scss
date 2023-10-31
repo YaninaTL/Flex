@@ -369,6 +369,7 @@ iframe.active {
     position: relative;
 
     margin-top: 0.5em;
+    margin-bottom: 1em;
   }
   h2::before {
     position: absolute;
@@ -389,7 +390,7 @@ iframe.active {
     font-family: var(--ff-body);
     font-size: 1.4rem;
     font-weight: 400;
-    line-height: 4rem; /* 200% */
+    line-height: 2em; /* 200% */
   }
 }
 //slideshow
@@ -534,4 +535,24 @@ iframe.active {
   .gallery img {
     display: none;
   }
+}
+
+// CARDS
+.card {
+  display: none;
+  border: 1px solid #000;
+  padding: 10px;
+  margin: 10px;
+}
+
+.card.active {
+  display: block;
+}
+
+.season-selector {
+  margin: 20px 0;
+}
+
+.season-selector label {
+  margin-right: 10px;
 }

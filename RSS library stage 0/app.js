@@ -267,3 +267,21 @@ applyPagination();
 
 // Listen for window resize events
 window.addEventListener("resize", applyPagination);
+
+// CARDS
+const seasonButtons = document.querySelectorAll('input[name="season"]');
+const cards = document.querySelectorAll(".card");
+
+seasonButtons.forEach((button) => {
+  button.addEventListener("change", () => {
+    const selectedSeason = button.value;
+
+    cards.forEach((card) => {
+      card.classList.remove("active");
+
+      if (card.classList.contains(selectedSeason)) {
+        card.classList.add("active");
+      }
+    });
+  });
+});
