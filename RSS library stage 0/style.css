@@ -480,20 +480,39 @@ iframe.active {
     display: none;
   }
 }
+#favorites {
+  margin-right: 3em;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+  gap: 2em;
+}
+
 .card {
   display: none;
   border: 1px solid #000;
   background: var(--clr-primary-neutral);
-  padding: 10px;
-  margin: 10px;
+  padding: 1em;
+  width: 50em;
+  height: 50.5em;
+  position: relative;
 }
 
 .card.active {
   display: block;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 1em;
-  max-width: 100%;
+}
+.card.active img {
+  position: absolute;
+  content: "";
+  bottom: -0.1em;
+  right: -3em;
+  width: 20em;
+  height: 30em;
 }
 
 .season-selector {
