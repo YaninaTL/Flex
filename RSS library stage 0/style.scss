@@ -541,12 +541,18 @@ iframe.active {
 .card {
   display: none;
   border: 1px solid #000;
+  background: var(--clr-primary-neutral);
   padding: 10px;
   margin: 10px;
 }
 
 .card.active {
   display: block;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1em;
+  max-width: 100%;
 }
 
 .season-selector {

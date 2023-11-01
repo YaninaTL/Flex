@@ -269,10 +269,52 @@ applyPagination();
 window.addEventListener("resize", applyPagination);
 
 // CARDS
+// const seasonButtons = document.querySelectorAll('input[name="season"]');
+// const cards = document.querySelectorAll(".card");
+
+// seasonButtons.forEach((button) => {
+//   button.addEventListener("change", () => {
+//     const selectedSeason = button.value;
+
+//     cards.forEach((card) => {
+//       card.classList.remove("active");
+
+//       if (card.classList.contains(selectedSeason)) {
+//         card.classList.add("active");
+//       }
+//     });
+//   });
+// });
+
+// Show the current season
 const seasonButtons = document.querySelectorAll('input[name="season"]');
 const cards = document.querySelectorAll(".card");
 
+function getCurrentSeason() {
+  const currentDate = new Date();
+  const month = currentDate.getMonth() + 1; // Months are zero-based, so add 1
+  let season = "";
+
+  if (month >= 3 && month <= 5) {
+    season = "spring";
+  } else if (month >= 6 && month <= 8) {
+    season = "summer";
+  } else if (month >= 9 && month <= 11) {
+    season = "autumn";
+  } else {
+    season = "winter";
+  }
+
+  return season;
+}
+const currentSeason = getCurrentSeason();
+
 seasonButtons.forEach((button) => {
+  if (button.value === currentSeason) {
+    button.checked = true;
+    button.dispatchEvent(new Event("change")); // Manually trigger the change event
+  }
+
   button.addEventListener("change", () => {
     const selectedSeason = button.value;
 
@@ -284,4 +326,30 @@ seasonButtons.forEach((button) => {
       }
     });
   });
+});
+document.addEventListener("DOMContentLoaded", function () {
+  const currentSeason = getCurrentSeason();
+
+  seasonButtons.forEach((button) => {
+    if (button.value === currentSeason) {
+      button.checked = true;
+    }
+    button.addEventListener("change", () => {
+      const selectedSeason = button.value;
+
+      cards.forEach((card) => {
+        card.classList.remove("active");
+
+        if (card.classList.contains(selectedSeason)) {
+          card.classList.add("active");
+        }
+      });
+    });
+  });
+
+  // Trigger the change event for the initially checked season button
+  const checkedButton = document.querySelector('input[name="season"]:checked');
+  if (checkedButton) {
+    checkedButton.dispatchEvent(new Event("change"));
+  }
 });
