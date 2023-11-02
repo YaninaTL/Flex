@@ -353,3 +353,5 @@ document.addEventListener("DOMContentLoaded", function () {
     checkedButton.dispatchEvent(new Event("change"));
   }
 });
+
+// fix gallery img

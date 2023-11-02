@@ -539,7 +539,64 @@ iframe.active {
 
 #favorites {
   margin-right: 3em;
+
+  h2 {
+    // text-align: center;
+    margin-right: -1em;
+  }
+
+  h4 {
+    color: var(--clr-primary-dark);
+    text-align: left;
+    font-family: var(--ff-body);
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  label {
+    color: var(--clr-primary-dark);
+    font-family: var(--ff-body);
+    font-size: 1.2rem;
+  }
+
+  /* Style labels for unchecked radio buttons */
+  input[type="radio"] + label {
+    font-weight: 400;
+  }
+
+  /* Style labels for checked radio buttons */
+  input[type="radio"]:checked + label {
+    font-weight: 700;
+  }
+
+  /* CSS to change the color of the radio button */
+  input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    border: 1px solid black;
+    border-radius: 50%; /* Make it circular */
+    outline: none;
+    background-color: transparent; /* Remove the dot background */
+
+    min-height: 1em;
+    min-width: 1em;
+    // avoid shrinking on smaller screens
+  }
+
+  /* Style the dot when the radio button is checked */
+  input[type="radio"]:checked::before {
+    content: "";
+    display: block;
+    width: 0.65em;
+    height: 0.65em;
+    background: black; /* Set the dot color to black */
+    border-radius: 50%;
+    margin: 0.11em; /* Adjust the position of the dot */
+  }
 }
+
 // CARDS
 .cards {
   display: flex;
@@ -548,6 +605,21 @@ iframe.active {
   align-items: center;
   align-content: space-between;
   gap: 2em;
+
+  p {
+    max-width: 30em;
+
+    color: var(--clr-primary-dark);
+    font-family: var(--ff-body);
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 3em;
+    letter-spacing: 0.2rem;
+    text-transform: capitalize;
+
+    padding-right: 1em;
+    margin: 1em 0;
+  }
 }
 .card {
   display: none;
@@ -558,6 +630,66 @@ iframe.active {
   width: 50em;
   height: 50.5em;
   position: relative;
+
+  h3 {
+    color: #000;
+    font-family: Forum;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4rem; /* 200% */
+    letter-spacing: 0.2rem;
+    text-transform: capitalize;
+    position: relative;
+  }
+  h3::before {
+    position: absolute;
+    content: "";
+    background-color: var(--clr-accent);
+    height: 1px;
+    width: 10%;
+    bottom: 0;
+    left: 0;
+  }
+
+  h4 {
+    color: #000;
+    font-family: Inter;
+    font-size: 1.5rem;
+    line-height: 3em; /* 266.667% */
+    letter-spacing: 0.2rem;
+
+    margin-top: 1em;
+  }
+
+  span {
+    text-transform: uppercase;
+  }
+
+  button {
+    background: transparent;
+    color: #0c0c0e;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.1rem;
+
+    width: 7.5rem;
+    height: 3rem;
+
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+  }
+
+  button:hover {
+    color: var(--clr-accent);
+    border: 1px solid var(--clr-accent);
+  }
+  // OWN text
 }
 
 .card.active {
@@ -569,15 +701,20 @@ iframe.active {
     bottom: -0.1em;
     right: -3em;
 
-    width: 20em;
-    height: 30em;
+    width: 16em;
+    height: 26em;
   }
 }
 
 .season-selector {
-  margin: 20px 0;
+  margin: 2em 0;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .season-selector label {
-  margin-right: 10px;
+  margin-left: 1em;
+  margin-right: 5em;
 }
