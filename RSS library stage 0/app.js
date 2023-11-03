@@ -354,4 +354,45 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// fix gallery img
+// fix gallery img ???
+
+// Buy -> OWN
+
+// // Get all elements with the class "button"
+// const buttons = document.querySelectorAll(".button");
+
+// // Function to reset all buttons to their default state
+// function resetButtons() {
+//   buttons.forEach((button) => {
+//     button.textContent = "Buy";
+//     button.classList.remove("active");
+//   });
+// }
+
+// // Iterate through each button
+// buttons.forEach((button) => {
+//   // Add a click event listener to each button
+//   button.addEventListener("click", function () {
+//     resetButtons(); // Reset all buttons
+//     button.textContent = "Own"; // Set the clicked button to "Own"
+//     button.classList.add("active");
+//   });
+// });
+
+// Get all elements with the class "button"
+const button = document.querySelectorAll(".button");
+
+// Function to handle the hover effect
+function handleHover(button) {
+  button.addEventListener("mouseenter", function () {
+    button.textContent = "Own";
+  });
+  button.addEventListener("mouseleave", function () {
+    button.textContent = "Buy";
+  });
+}
+
+// Iterate through each button and apply the hover effect
+button.forEach((button) => {
+  handleHover(button);
+});

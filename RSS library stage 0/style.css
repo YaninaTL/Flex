@@ -605,8 +605,10 @@ iframe.active {
   position: absolute;
   bottom: 1em;
   left: 1em;
+  cursor: pointer;
 }
-.card button:hover {
+.card button:hover,
+.card button:focus {
   color: var(--clr-accent);
   border: 1px solid var(--clr-accent);
 }

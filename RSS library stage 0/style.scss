@@ -683,13 +683,23 @@ iframe.active {
     position: absolute;
     bottom: 1em;
     left: 1em;
+
+    cursor: pointer;
   }
 
-  button:hover {
+  button:hover,
+  button:focus {
     color: var(--clr-accent);
     border: 1px solid var(--clr-accent);
   }
   // OWN text
+  // .button:hover::after {
+  //   content: "Own";
+  // }
+
+  // .button:not(:hover)::after {
+  //   content: "Buy";
+  // }
 }
 
 .card.active {
