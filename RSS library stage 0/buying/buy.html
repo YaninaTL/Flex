@@ -37,11 +37,14 @@
           </div>
           <div class="txt-field">
             <label for="date">Expiration date</label>
-            <input type="number" name="date" id="date" required />
+            <div class="card-date">
+              <input type="number" name="date" id="date" required />
+              <input type="number" name="date" id="date" required />
+            </div>
           </div>
           <div class="txt-field">
             <label for="CVC">CVC</label>
-            <input type="number" name="CVC" id="CVC" required />
+            <input type="number" name="CVC" id="CVC" class="cvc" required />
           </div>
           <div class="txt-field">
             <label for="cardholder">Cardholder name</label>
@@ -56,7 +59,7 @@
             <input type="text" name="city" id="city" required />
           </div>
           <div class="buy">
-            <input type="submit" value="Buy" />
+            <button>Buy</button>
             <div class="price">$ 25.00</div>
           </div>
         </form>
