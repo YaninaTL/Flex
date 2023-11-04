@@ -354,10 +354,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// fix gallery img ???
+// fix gallery big imgs -> sometimes don't have time to load?
 
 // Buy -> OWN
-
+// FOCUS
 // // Get all elements with the class "button"
 // const buttons = document.querySelectorAll(".button");
 
@@ -379,20 +379,24 @@ document.addEventListener("DOMContentLoaded", function () {
 //   });
 // });
 
-// Get all elements with the class "button"
-const button = document.querySelectorAll(".button");
+// HOVER
+// // Get all elements with the class "button"
+// const button = document.querySelectorAll(".button");
 
-// Function to handle the hover effect
-function handleHover(button) {
-  button.addEventListener("mouseenter", function () {
-    button.textContent = "Own";
-  });
-  button.addEventListener("mouseleave", function () {
-    button.textContent = "Buy";
-  });
-}
+// // Function to handle the hover effect
+// function handleHover(button) {
+//   button.addEventListener("mouseenter", function () {
+//     button.textContent = "Own";
+//   });
+//   button.addEventListener("mouseleave", function () {
+//     button.textContent = "Buy";
+//   });
+// }
 
-// Iterate through each button and apply the hover effect
-button.forEach((button) => {
-  handleHover(button);
-});
+// // Iterate through each button and apply the hover effect
+// button.forEach((button) => {
+//   handleHover(button);
+// });
+
+// IF USER BUYS A BOOK -> ADD CLASS OWNED
+//change the bnt name

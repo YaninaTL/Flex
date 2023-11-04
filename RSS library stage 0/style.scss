@@ -701,6 +701,7 @@ iframe.active {
   //   content: "Buy";
   // }
 }
+// Add class own and change the style add js from the profile to main html
 
 .card.active {
   display: block;
@@ -727,4 +728,14 @@ iframe.active {
 .season-selector label {
   margin-left: 1em;
   margin-right: 5em;
+}
+
+@media (max-width: 800px) {
+  .season-selector {
+    justify-content: space-between;
+  }
+
+  .card {
+    margin: 0 auto;
+  }
 }

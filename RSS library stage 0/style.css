@@ -635,4 +635,13 @@ iframe.active {
 .season-selector label {
   margin-left: 1em;
   margin-right: 5em;
+}
+
+@media (max-width: 800px) {
+  .season-selector {
+    justify-content: space-between;
+  }
+  .card {
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=style.css.map */
