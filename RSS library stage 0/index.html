@@ -184,6 +184,13 @@
       <section id="favorites" class="section">
         <div class="title">
           <h2>Favorites</h2>
+          <div class="modal-container" id="buying-popup">
+                <iframe
+                  id="buying-popup-iframe"
+                  src="./buying/buy.html"
+                  frameborder="0"
+                  scrolling="no"
+                ></iframe></div>
         </div>
         <h4>Pick favorites of season</h4>
         <!-- cards -->
@@ -197,19 +204,13 @@
           <input type="radio" name="season" id="autumn" value="autumn">
           <label for="autumn">Autumn</label>
     </div>
-          <iframe
-            id="buying-popup-iframe"
-            src="./buying/buy.html"
-            frameborder="0"
-            scrolling="no"
-          ></iframe>
     <div class="cards">
         <div class="card winter">
           <h3>Staff Picks</h3>
           <h4><span>The Book Eaters</span><br>By Sunyi Dean</h4>
           <p>An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.       </p>
           <img src="./img/bookw1.png" alt="">
-          <button class="button">Buy</button>
+          <button class="button" data-iframe-src="./buying/buy.html">Buy</button>
         </div>
         <div class="card winter"><h3>Staff Picks</h3>
           <h4><span>Cackle</span><br>By Rachel Harrison</h4>

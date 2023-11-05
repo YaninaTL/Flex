@@ -400,3 +400,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // IF USER BUYS A BOOK -> ADD CLASS OWNED
 //change the bnt name
+
+//BUYING
+// Function to open the modal
+function openModal() {
+  // Show the modal container
+  const modalContainer = document.getElementById("buying-popup");
+  modalContainer.classList.add("show-modal");
+
+  // Send a message to the iframe to open its content
+  const iframe = document.getElementById("buying-popup-iframe");
+  iframe.contentWindow.postMessage({ openPopup: true }, "*");
+}
+
+// Add a click event listener to the Buy button
+const buyButton = document.querySelector(".button");
+buyButton.addEventListener("click", openModal);

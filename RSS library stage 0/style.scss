@@ -739,3 +739,30 @@ iframe.active {
     margin: 0 auto;
   }
 }
+
+//MODAL buy
+/* Initially hide the modal container */
+.modal-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+/* Show the modal when the "show-modal" class is added */
+.modal-container.show-modal {
+  display: flex;
+}
+
+#buying-popup-iframe {
+  border: none;
+  width: 65rem;
+  height: 54rem;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: block;
+}
