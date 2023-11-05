@@ -751,6 +751,7 @@ iframe.active {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1000;
+  
 }
 
 /* Show the modal when the "show-modal" class is added */
@@ -762,8 +763,6 @@ iframe.active {
 
 #buying-popup-iframe {
   border: none;
-  width: 65rem;
-  height: 54rem;
 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   display: block;

@@ -25,21 +25,23 @@ html {
 }
 
 body {
-  background: var(--clr-primary-neutral);
+  background: transparent;
   font-family: var(--ff-body);
-
-  width: 65rem;
-  height: 54rem;
-
-  margin: 0 auto;
 }
 
+.wrapper {
+  background: var(--clr-primary-neutral);
+  margin: 0 auto;
+
+  width: 65em;
+  height: 46em;
+}
 header {
   background: var(--clr-primary-dark);
   height: 6em;
 
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   gap: 10em;
 }
