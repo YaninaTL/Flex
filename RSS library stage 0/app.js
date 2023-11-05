@@ -414,5 +414,7 @@ function openModal() {
 }
 
 // Add a click event listener to the Buy button
-const buyButton = document.querySelector(".button");
-buyButton.addEventListener("click", openModal);
+const buyButtons = document.querySelectorAll(".button");
+buyButtons.forEach(function (button) {
+  button.addEventListener("click", openModal);
+});

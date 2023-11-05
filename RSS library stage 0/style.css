@@ -660,6 +660,8 @@ iframe.active {
 /* Show the modal when the "show-modal" class is added */
 .modal-container.show-modal {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #buying-popup-iframe {
