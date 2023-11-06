@@ -116,8 +116,6 @@ h1 a {
 
 @media screen and (min-width: 800px) {
   .nav-center {
-    width: 90vw;
-    max-width: 1170px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -436,7 +434,7 @@ iframe.active {
   }
   .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     grid-gap: 1em;
     max-width: 100%;
   }

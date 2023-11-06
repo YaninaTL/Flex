@@ -418,3 +418,5 @@ const buyButtons = document.querySelectorAll(".button");
 buyButtons.forEach(function (button) {
   button.addEventListener("click", openModal);
 });
+
+// When it's clicked out of the field -> close + btn and try esc btn

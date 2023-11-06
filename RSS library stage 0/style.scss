@@ -115,8 +115,8 @@ h1 a {
 }
 @media screen and (min-width: 800px) {
   .nav-center {
-    width: 90vw;
-    max-width: 1170px;
+    // width: 90vw;
+    // max-width: 1170px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -484,7 +484,7 @@ iframe.active {
 
   .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     grid-gap: 1em;
     max-width: 100%;
 
@@ -751,7 +751,6 @@ iframe.active {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1000;
-  
 }
 
 /* Show the modal when the "show-modal" class is added */
