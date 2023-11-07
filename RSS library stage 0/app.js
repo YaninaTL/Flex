@@ -420,3 +420,12 @@ buyButtons.forEach(function (button) {
 });
 
 // When it's clicked out of the field -> close + btn and try esc btn
+window.addEventListener("message", function (event) {
+  if (event.data.closePopup) {
+    // Hide the iframe containing the popup profile
+    const profilePopupIframe = document.getElementById("buying-popup");
+    profilePopupIframe.style.display = "none";
+  }
+});
+
+//a try
