@@ -27,7 +27,7 @@ html {
 
 nav {
   background: var(--clr-accent-dark);
-  padding: 1em;
+  padding: 1em 2em;
 }
 
 /* fixed nav */
@@ -333,7 +333,7 @@ header {
 }
 
 main {
-  padding: 0 1em;
+  padding: 0 2em;
 }
 // check it
 
@@ -483,9 +483,13 @@ iframe.active {
   }
 
   .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-    grid-gap: 1em;
+    // display: grid;
+    // grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    // // grid-gap: 1em;
+    justify-content: center;
+    gap: 1em;
+    display: flex;
+
     max-width: 100%;
 
     img {

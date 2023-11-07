@@ -28,7 +28,6 @@ html {
   margin: 0 auto;
   width: 60em;
   height: 100%;
-  background-color: #0c0c0e;
   margin-top: 3em;
   display: grid;
   position: relative;
@@ -107,6 +106,8 @@ html {
 
   background-color: transparent;
   border: transparent;
+
+  cursor: pointer;
 
   svg {
     width: 1em;
