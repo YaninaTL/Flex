@@ -770,3 +770,91 @@ iframe.active {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   display: block;
 }
+
+//SHOP
+
+#coffee {
+  p {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 4rem; /* 200% */
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+  }
+
+  .title-menu {
+    color: #bb945f;
+    font-family: Forum;
+    font-size: 2.5rem;
+
+    font-weight: 400;
+    line-height: 4rem; /* 100% */
+    letter-spacing: 0.2rem;
+    text-transform: capitalize;
+  }
+  .title-menu::before {
+    display: none;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      color: #000;
+      font-family: Inter;
+      font-size: 1.4rem;
+
+      font-weight: 400;
+      line-height: 4rem; /* 200% */
+      letter-spacing: 0.2rem;
+      text-transform: capitalize;
+      display: flex;
+      // FIX NEEDED !!!
+      justify-items: flex-start;
+    }
+
+    .line {
+      width: 5em;
+      height: 0.1em;
+      background-color: #bb945f;
+
+      display: flex;
+      align-self: center;
+    }
+
+    .price-menu {
+      color: #000;
+      font-family: Forum;
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 4rem; /* 200% */
+      letter-spacing: 0.2rem;
+      text-transform: capitalize;
+    }
+  }
+
+  .all-menu {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+
+    flex-wrap: wrap;
+  }
+
+  .position {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    gap: 3em;
+  }
+
+  .position-2 {
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+    gap: 3em;
+  }
+}

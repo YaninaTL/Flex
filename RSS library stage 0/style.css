@@ -666,4 +666,75 @@ iframe.active {
   border: none;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   display: block;
+}
+
+#coffee p {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 4rem; /* 200% */
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+}
+#coffee .title-menu {
+  color: #bb945f;
+  font-family: Forum;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 4rem; /* 100% */
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
+}
+#coffee .title-menu::before {
+  display: none;
+}
+#coffee ul {
+  list-style: none;
+}
+#coffee ul li {
+  color: #000;
+  font-family: Inter;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 4rem; /* 200% */
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
+  display: flex;
+  justify-items: flex-start;
+}
+#coffee ul .line {
+  width: 5em;
+  height: 0.1em;
+  background-color: #bb945f;
+  display: flex;
+  align-self: center;
+}
+#coffee ul .price-menu {
+  color: #000;
+  font-family: Forum;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 4rem; /* 200% */
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
+}
+#coffee .all-menu {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#coffee .position {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  gap: 3em;
+}
+#coffee .position-2 {
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+  gap: 3em;
 }/*# sourceMappingURL=style.css.map */
