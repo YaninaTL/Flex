@@ -811,9 +811,10 @@ iframe.active {
       line-height: 4rem; /* 200% */
       letter-spacing: 0.2rem;
       text-transform: capitalize;
-      display: flex;
+
+      // display: flex;
+      // justify-items: flex-start;
       // FIX NEEDED !!!
-      justify-items: flex-start;
     }
 
     .line {
@@ -856,5 +857,38 @@ iframe.active {
     align-content: center;
     justify-content: flex-end;
     gap: 3em;
+  }
+}
+
+#contacts {
+  h3,
+  span {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.5rem;
+
+    font-weight: 700;
+    line-height: 4rem; /* 200% */
+    letter-spacing: 0.2rem;
+    text-transform: capitalize;
+  }
+
+  ul {
+    list-style: none;
+
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 4rem; /* 200% */
+    letter-spacing: 0.2rem;
+    text-transform: capitalize;
+  }
+
+  .container-contacts {
+  }
+  .left-col-cont {
   }
 }
